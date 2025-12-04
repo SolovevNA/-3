@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8"/>
+    <html lang="ru">
+	<link rel="stylesheet" href="C:\Users\НИКИТА\Desktop\prog\3\Style.css"/>
+    <script src="https://kit.fontawesome.com/81c5d975ef.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    	<div class="app">
+    		<header>
+    			<h1>
+    				<i class="fa-solid fa-pen-fancy"></i>
+    				Мои задачи
+    			</h1>
+    			<p id="date"></p>
+    		</header>
+    		<div class="todo-input">
+    			<input type = "text" id = "task-input" placeholder="Что нужно сделать?"/>
+    			<button id="add-task">
+    				<i class="fa-solid fa-calendar-check"></i>
+    			
+    			</button>
+    		</div>
+    		<div class="filters">
+    			<span class = "filter active" data-filter="all">Все</span>
+    			<span class = "filter" data-filter="active">Активные</span>
+    			<span class = "filter" data-filter="completed">Сделано</span>
+    		</div>
+    		<div class="todo-container">
+    			<u1 id = "todos-list">
+    			</u1>
+    			<div class="empty-state hidden">
+    				<i class="fa-solid fa-bars-staggered"></i>
+    				
+					
+    			</div>
+    		</div>
+    		<footer>
+    			<p id = "items-left">0  осталось</p>
+    			<button id="clear-completed">Очистить завершённые</button>
+			</footer>
+			<script src="script.js"></script>
+		</div>
+	</body>
+</html>
+
+

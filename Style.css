@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary: #774968;
+	--primary-light: #99FFCC;
+	--primary: #006666;
+	--dark: #131214;
+	--light: #CCFFFF;
+	--gray: #706d72;
+	--danger: #f7274a;
+	--succes: #786db6;
+	--boarder: #336666;
+
+}
+body{
+	font-family: sans-serif;
+	background-color: var(--primary-light);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.todo-input{
+	padding: 20px 25px;
+	display: flex;
+	gap: 10px;
+	background-color: var(--light);
+	border-bottom: 1px solid var(--boarder);
+}
+
+.app{
+	width: 100%;
+	max-width: 500px;
+	background-color: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+header{
+	background-color: var(--primary);
+	color: var(--light);
+	padding: 20px 25px;
+}
+
+
+.todo-input button{
+	background-color: var(--boarder);
+	color: white;
+	width: 25px;
+	height: 25px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.todo-input button:hover{
+	background-color: var(--primary-light);
+}
+.filters{
+	padding: 15px 25px;
+	gap: 15px;
+	border-bottom: 1px solid var(--boarder);
+	display: flex;
+}
+.filter{
+	padding: 5px 3px;
+	cursor: pointer;
+	color: var(--gray);
+	border-bottom: 2px solid transparent;
+	transition: all 0.2s;
+
+}
+.filter.active{
+	color: var(--primary);
+	border-bottom: 2px solid var(--primary);
+	font-weight: 500;
+}
+.todos-container{
+	padding: 15px 0;
+	max-height: 300px;
+	overflow: auto;
+}
+.todos-list{
+	list-style-type: none;
+}
+.todo-item{
+	padding: 12px 15;
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+	background-color:var(--light);
+}
+.checkbox-container{
+	margin-right: 15px;
+
+}
+.todo-checkbox{
+	opacity: 1;
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	border-radius: 8px;
+}
+.checkmark{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--boarder);
+	border-radius: 4px;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.todo-item.completed .todo-item-text{
+	text-decoration: line-through;
+	font-family: 'Franklin Gothic Medium';
+	color: var(--succes);
+
+}
